@@ -1,0 +1,85 @@
+/* Sample CSS styles (customize as needed) */
+.file-verification {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .file-input {
+    margin-bottom: 20px;
+  }
+  
+  .file-input label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .file-input input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .file-input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .file-viewer {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .line-number-input {
+    margin-top: 20px;
+  }
+  
+  .line-number-input label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .line-number-input input[type="number"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .line-number-input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .validation-status {
+    margin-top: 20px;
+  }
+  
+  .valid-status {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .invalid-status {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px;
+  }
+  

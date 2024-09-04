@@ -1,0 +1,91 @@
+
+
+.outerBox{
+    display: flex;
+    width: 100vw;
+ }
+ 
+ .box {
+    border: 2px solid black;
+    /* width: 85vw;
+    height: 90vh; */
+    /* background: black; */    
+ }
+ /* ****** Sidebar ****** */
+ .sideBar{
+    background-color: rgb(221, 213, 213);
+    width: 15vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+ }
+ 
+ /* ****** Sidebar Items ******* */
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .sideBarItems::-webkit-scrollbar {
+    display: none;
+ }
+ /* Hide scrollbar for IE, Edge and Firefox */
+ .sideBarItems {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+ }
+ 
+ .sideBar .sideBarItems ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .sideBar .sideBarItems ul li{
+    display: inline-block;
+    width: 100px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 15px 0;
+    color: #252525;
+ }
+ .sideBar .sideBarItems ul li i {
+    padding: 0 10px;
+ }
+ 
+ /* ***** Line ***** */
+ 
+ .line{
+    border: 2px solid black;
+ }
+ 
+ /* ****** Path ******* */
+ .pathItems{
+    overflow-y: scroll;
+ }
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .pathItems::-webkit-scrollbar {
+    display: none;
+ }
+ /* Hide scrollbar for IE, Edge and Firefox */
+ .pathItems {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+ }
+ 
+ .sideBar .pathItems ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .sideBar .pathItems ul li{
+    display: inline-block;
+    width: 100px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 15px 0;
+    color: #252525;
+ }
+ .sideBar .pathItems ul li i {
+    padding: 0 10px;
+ }
+ 

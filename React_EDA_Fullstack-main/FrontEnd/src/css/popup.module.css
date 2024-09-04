@@ -1,0 +1,83 @@
+
+.popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+/* .popupInner{
+    position: relative;
+    padding: 32px;
+    width: 30vw;
+    min-height: 37vh;
+    background-color: #fff;
+    color: black;
+    overflow-y:scroll;
+} */
+.popupInner h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.popupInner .closeBtn{
+    position: absolute;
+    /* top: 16px;
+    right: 16px; */
+    color: #000;
+    font-size: 20px;
+    
+
+}
+
+table{
+    width: 100%;
+    min-height: 37vh;
+    background: #ffffff;
+    color: black;
+}
+
+td, th{
+    text-align: center;
+    padding: 8px;
+    border-right: 1px solid #1A2929;
+}
+td{
+    font-size: 15px;
+}
+thead th{
+    color: #ffffff;
+}
+tr:nth-child(even){
+    background: #9EDFD3;
+}
+
+
+/********* FileOpen CSS ********/
+.border{
+    position: relative;
+    padding: 32px;
+    width: 50vw;
+    height: 47vh;
+    max-width: 640px;
+    background-color: rgb(228, 218, 218);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border .closeBtn{
+    position: relative;
+    top: 16px;
+    right: 16px;
+    color: black;
+    font-size: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}

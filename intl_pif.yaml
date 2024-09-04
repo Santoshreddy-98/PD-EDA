@@ -1,0 +1,27 @@
+Project:
+  Project_Name: chase_pyndiah
+  Gate_Count: 4
+  Power_unit: W
+
+Partitions:
+
+  - Partition_Name: chase_pyndiah
+    Lead: Antony
+    DIR: /home/vijay7396/Vijay/Dashboard_partitions/smavpar1/nfs/iind/disks/wlr_disk10/kgurus2x/pnr/chase_pyndiah/WHR_RTL_WW32_3_FEC/runs/WHR_RTL_WW32_3_FEC_chase_pyndiah_1p284g_cg_0808_fsdb/1276.4/apr_fc/reports
+
+Setup:
+  - Corner: func_ssgnp_0p675v_125c_cworst_CCworst_T
+    Group:
+      group1: heartbt_clk
+      group2: rx_ref_div_clk  
+      group3: tx_ref_div_clk
+
+Hold:
+  - Corner: func_ffgnp_0p935v_0c_cbest_CCbest
+    Group:
+      group1: tx_ref_div_clk
+      group3: tx_synth_div_clk
+      group4: rx_llpd_clk
+
+Power:
+  Corner: func_ffgnp_0p935v_0c_cbest_CCbest

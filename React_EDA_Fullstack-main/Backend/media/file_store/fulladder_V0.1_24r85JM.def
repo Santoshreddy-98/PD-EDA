@@ -1,0 +1,472 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN fulladdder ;
+UNITS DISTANCE MICRONS 1000 ;
+PROPERTYDEFINITIONS
+COMPONENTPIN ACCESS_DIRECTION STRING ;
+END PROPERTYDEFINITIONS
+DIEAREA ( 0 0 ) ( 0 6300 ) ( 6720 6300 ) ( 6720 0 ) ;
+ROW unit_row_0 unit 0 0 FS DO 48 BY 1 STEP 140 0 ;
+ROW unit_row_1 unit 0 900 N DO 48 BY 1 STEP 140 0 ;
+ROW unit_row_2 unit 0 1800 FS DO 48 BY 1 STEP 140 0 ;
+ROW unit_row_3 unit 0 2700 N DO 48 BY 1 STEP 140 0 ;
+ROW unit_row_4 unit 0 3600 FS DO 48 BY 1 STEP 140 0 ;
+ROW unit_row_5 unit 0 4500 N DO 48 BY 1 STEP 140 0 ;
+ROW unit_row_6 unit 0 5400 FS DO 48 BY 1 STEP 140 0 ;
+TRACKS Y 0 DO 46 STEP 140 LAYER M1 ;
+TRACKS X 0 DO 49 STEP 140 LAYER M1 ;
+TRACKS Y 0 DO 64 STEP 100 LAYER M2 ;
+TRACKS X 0 DO 68 STEP 100 LAYER M2 ;
+TRACKS Y 0 DO 64 STEP 100 LAYER M3 ;
+TRACKS X 0 DO 68 STEP 100 LAYER M3 ;
+TRACKS Y 0 DO 64 STEP 100 LAYER M4 ;
+TRACKS X 0 DO 68 STEP 100 LAYER M4 ;
+TRACKS Y 0 DO 64 STEP 100 LAYER M5 ;
+TRACKS X 0 DO 68 STEP 100 LAYER M5 ;
+TRACKS Y 0 DO 64 STEP 100 LAYER M6 ;
+TRACKS X 0 DO 68 STEP 100 LAYER M6 ;
+TRACKS Y 0 DO 64 STEP 100 LAYER M7 ;
+TRACKS X 0 DO 68 STEP 100 LAYER M7 ;
+TRACKS Y 0 DO 7 STEP 1000 LAYER M8 ;
+TRACKS X 0 DO 7 STEP 1000 LAYER M8 ;
+TRACKS Y 0 DO 7 STEP 1000 LAYER M9 ;
+TRACKS X 0 DO 7 STEP 1000 LAYER M9 ;
+TRACKS Y 0 DO 2 STEP 4500 LAYER AP ;
+TRACKS X 0 DO 2 STEP 4500 LAYER AP ;
+COMPONENTS 17 ;
+- mux1 CKMUX2SGD1BWP30P140 + PLACED ( 0 2700 ) N ;
+- gate AN2SGD0BWP30P140 + PLACED ( 140 5400 ) FS ;
+- CLK_B1 BUFFSGD3BWP30P140HVT + PLACED ( 1400 5400 ) FS ;
+- reg1 SDFQOPPSBSGD1BWP30P140HVT + PLACED ( 140 4500 ) N ;
+- reg2 SDFQOPPSBSGD1BWP30P140HVT + PLACED ( 560 900 ) N ;
+- reg3 SDFQOPPSBSGD1BWP30P140HVT + PLACED ( 280 1800 ) FS ;
+- G1 XOR2SGD0BWP30P140 + PLACED ( 2940 5400 ) FS ;
+- G2 XOR2SGD0BWP30P140 + PLACED ( 3920 4500 ) N ;
+- G3 AN2SGD0BWP30P140 + PLACED ( 5880 2700 ) N ;
+- G4 AN2SGD0BWP30P140 + PLACED ( 5040 5400 ) FS ;
+- G5 AN2SGD0BWP30P140 + PLACED ( 5320 4500 ) N ;
+- G7 OR2SGD1BWP30P140 + PLACED ( 6160 5400 ) FS ;
+- G6 OR2SGD1BWP30P140 + PLACED ( 4760 900 ) N ;
+- reg4 SDFQOPPSBSGD1BWP30P140HVT + PLACED ( 3220 3600 ) FS ;
+- reg5 SDFQOPPSBSGD1BWP30P140HVT + PLACED ( 3500 1800 ) FS ;
+- B1 BUFFSGD3BWP30P140HVT + PLACED ( 5320 0 ) FS ;
+- B2 BUFFSGD3BWP30P140HVT + PLACED ( 6020 0 ) FS ;
+END COMPONENTS
+PINS 10 ;
+- A + NET A + DIRECTION INPUT + USE SIGNAL
+   + LAYER M3 ( 0 0 ) ( 340 50 )
+   + PLACED ( 0 4875 ) N ;
+- B + NET B + DIRECTION INPUT + USE SIGNAL
+   + LAYER M3 ( 0 0 ) ( 340 50 )
+   + PLACED ( 0 1275 ) N ;
+- C + NET C + DIRECTION INPUT + USE SIGNAL
+   + LAYER M3 ( 0 0 ) ( 340 50 )
+   + PLACED ( 0 2175 ) N ;
+- Sum + NET Sum + DIRECTION OUTPUT + USE SIGNAL
+   + LAYER M3 ( 0 0 ) ( 340 50 )
+   + PLACED ( 6380 475 ) N ;
+- Carry + NET Carry + DIRECTION OUTPUT + USE SIGNAL
+   + LAYER M4 ( 0 0 ) ( 50 340 )
+   + PLACED ( 5775 0 ) N ;
+- Clock + NET Clock + DIRECTION INPUT + USE SIGNAL
+   + LAYER M3 ( 0 0 ) ( 340 50 )
+   + PLACED ( 0 3275 ) N ;
+- Scan_clk + NET Scan_clk + DIRECTION INPUT + USE SIGNAL
+   + LAYER M3 ( 0 0 ) ( 340 50 )
+   + PLACED ( 0 2875 ) N ;
+- Scan_en + NET Scan_en + DIRECTION INPUT + USE SIGNAL
+   + LAYER M3 ( 0 0 ) ( 340 50 )
+   + PLACED ( 0 3075 ) N ;
+- cg_en + NET cg_en + DIRECTION INPUT + USE SIGNAL
+   + LAYER M2 ( 0 0 ) ( 50 280 )
+   + PLACED ( 475 6020 ) N ;
+- gen_clk_mux + NET gen_clk_mux + DIRECTION INPUT + USE SIGNAL
+   + LAYER M3 ( 0 0 ) ( 340 50 )
+   + PLACED ( 0 1475 ) N ;
+END PINS
+PINPROPERTIES 10 ;
+- PIN A
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+- PIN B
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+- PIN C
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+- PIN Sum
+   + PROPERTY ACCESS_DIRECTION "0 right" ;
+- PIN Carry
+   + PROPERTY ACCESS_DIRECTION "0 bottom" ;
+- PIN Clock
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+- PIN Scan_clk
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+- PIN Scan_en
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+- PIN cg_en
+   + PROPERTY ACCESS_DIRECTION "0 top" ;
+- PIN gen_clk_mux
+   + PROPERTY ACCESS_DIRECTION "0 left" ;
+END PINPROPERTIES
+SPECIALNETS 14 ;
+- *Logic0*
+   + ROUTED M3 80 ( 815 4815 40 ) ( * 4885 40 )
+   + USE TIEOFF ;
+- Clock
+   + ROUTED M3 80 ( 1085 3215 40 ) ( * 3285 40 )
+   + USE SIGNAL ;
+- cg_en
+   + ROUTED M1 70 ( 405 6010 35 ) ( 500 * 35 )
+   NEW M1 70 ( 500 6010 35 ) ( 520 * 35 )
+   + USE SIGNAL ;
+- n4
+   + ROUTED M3 80 ( 5185 4815 40 ) ( * 4885 40 )
+   + USE SIGNAL ;
+- n5
+   + ROUTED M2 80 ( 6015 3080 40 ) ( * 3095 40 )
+   NEW M2 60 ( 3795 5835 30 ) ( * 5900 30 )
+   NEW M3 80 ( 5285 5900 40 ) ( * 5985 40 )
+   NEW M3 80 ( 5285 5815 40 ) ( * 5900 40 )
+   NEW M2 80 ( 5315 6020 40 ) ( * 6035 40 )
+   + USE SIGNAL ;
+- n8
+   + ROUTED M2 70 ( 3790 2220 35 ) ( * 2240 35 )
+   NEW M2 70 ( 3790 2240 35 ) ( * 2390 35 )
+   + USE SIGNAL ;
+- n9
+   + ROUTED M1 100 ( 6245 5905 50 ) ( 6265 * 50 )
+   + USE SIGNAL ;
+- n10
+   + ROUTED M1 90 ( 6420 5880 45 ) ( * 5910 45 )
+   NEW M1 80 ( 5535 5965 ) ( * 6045 )
+   + USE SIGNAL ;
+- n11
+   + ROUTED M1 70 ( 5820 4800 35 ) ( * 4815 35 )
+   + USE SIGNAL ;
+- n12
+   + ROUTED M2 110 ( 6630 5580 55 ) ( * 5600 55 )
+   + USE SIGNAL ;
+- n14
+   + ROUTED M1 120 ( 5415 455 60 ) ( 5430 * 60 )
+   + USE SIGNAL ;
+- n15
+   + ROUTED M1 120 ( 6115 455 60 ) ( 6130 * 60 )
+   NEW M1 70 ( 6640 1960 35 ) ( 6660 * 35 )
+   NEW M1 80 ( 6085 385 40 ) ( * 405 40 )
+   + USE SIGNAL ;
+- CLK
+   + ROUTED M3 80 ( 1385 2185 40 ) ( * 2200 40 )
+   NEW M1 60 ( 1755 5735 30 ) ( 1800 * 30 )
+   NEW M3 80 ( 1385 1385 40 ) ( * 1400 40 )
+   NEW M3 80 ( 1385 2200 40 ) ( * 2215 40 )
+   NEW M3 80 ( 4315 3985 40 ) ( * 4000 40 )
+   NEW M3 80 ( 1385 1400 40 ) ( * 1415 40 )
+   NEW M3 80 ( 4315 4000 40 ) ( * 4015 40 )
+   + USE SIGNAL ;
+- mux_clock
+   + ROUTED M1 60 ( 1325 3395 ) ( * 3455 )
+   + USE SIGNAL ;
+END SPECIALNETS
+NETS 26 ;
+- *Logic0*
+   ( reg5 SE )
+   ( reg5 SI )
+   ( reg4 SE )
+   ( reg4 SI )
+   ( reg3 SE )
+   ( reg3 SI )
+   ( reg2 SE )
+   ( reg2 SI )
+   ( reg1 SE )
+   ( reg1 SI )
+   + ROUTED M3 ( 1300 3900 ) VIA34_1cut W
+   NEW M3 ( 1040 3900 ) ( 1300 * ) VIA23_1cut W
+   NEW M2 ( 1300 3720 ) ( * 3900 )
+   NEW M1 ( 1300 3920 ) VIA12_1cut W
+   NEW M1 ( 1300 3920 ) ( 1600 * ) VIA12_1cut W ( * 4100 ) VIA23_1cut W ( 3600 * )
+   NEW M3 ( 3600 4100 ) ( 3900 * ) VIA23_1cut W
+   NEW M4 ( 3600 2300 ) ( * 4100 )
+   NEW M4 ( 3600 4100 ) ( * 4140 )
+   NEW M3 ( 3600 4100 ) VIA34_1cut W
+   NEW M1 ( 3700 2100 ) VIA12_1cut_V W
+   NEW M2 ( 3600 2100 ) ( 3700 * )
+   NEW M2 ( 3600 1900 ) ( * 2100 ) VIA23_1cut W
+   NEW M3 ( 3340 2100 ) ( 3600 * ) VIA34_1cut W ( * 2300 )
+   NEW M1 ( 3900 3920 ) VIA12_1cut_V W ( * 4100 )
+   NEW M2 ( 1000 2300 ) VIA23_1cut W
+   NEW M2 ( 800 4900 ) ( * 5080 ) VIA12_1cut_V W
+   NEW M4 ( 1300 3900 ) ( * 4800 ) VIA34_1cut W
+   NEW M3 ( 815 4800 ) ( 1300 * )
+   NEW M2 ( 800 4900 ) VIA23_1cut W
+   NEW M2 ( 800 4850 ) ( * 4900 )
+   NEW M2 ( 1200 1300 ) ( * 1400 )
+   NEW M3 ( 1000 2300 ) ( 1200 * ) VIA34_1cut W ( * 2600 )
+   NEW M4 ( 1200 2600 ) ( 1300 * )
+   NEW M4 ( 1300 2600 ) ( * 3900 )
+   NEW M2 ( 4100 2300 ) VIA23_1cut W
+   NEW M3 ( 3600 2300 ) ( 4100 * )
+   NEW M3 ( 3600 2300 ) VIA34_1cut W
+   NEW M2 ( 1000 2100 ) ( * 2300 )
+   NEW M2 ( 1000 2100 ) ( 1040 * )
+   NEW M2 ( 960 2100 ) ( 1000 * ) VIA12_1cut_V W
+   NEW M3 ( 900 2300 ) VIA34_1cut W
+   NEW M4 ( 900 1400 ) ( * 2300 )
+   NEW M3 ( 900 1400 ) VIA34_1cut W
+   NEW M3 ( 900 1400 ) ( 1200 * ) VIA23_1cut W
+   NEW M1 ( 1200 1480 ) VIA12_1cut_V W
+   + USE TIEOFF ;
+- A
+   ( PIN A )
+   ( reg1 D )
+   + ROUTED M2 ( 300 4900 ) VIA23_1cut W
+   NEW M2 ( 300 4900 ) ( 420 * ) VIA12_1cut W
+   + USE SIGNAL ;
+- B
+   ( PIN B )
+   ( reg2 D )
+   + ROUTED M1 ( 840 1400 ) VIA12_1cut W
+   NEW M2 ( 800 1370 ) ( 840 * )
+   NEW M2 ( 570 1300 ) ( 800 * ) VIA23_1cut W
+   NEW M3 ( 340 1300 ) ( 800 * )
+   + USE SIGNAL ;
+- C
+   ( PIN C )
+   ( reg3 D )
+   + ROUTED M2 ( 510 2270 ) ( 560 * )
+   NEW M1 ( 560 2300 ) VIA12_1cut W
+   NEW M3 ( 340 2200 ) ( 510 * )
+   NEW M3 ( 510 2200 ) ( 550 * )
+   NEW M2 ( 510 2200 ) VIA23_1cut W
+   NEW M2 ( 280 2200 ) ( 510 * )
+   + USE SIGNAL ;
+- Sum
+   ( PIN Sum )
+   ( B2 Z )
+   + ROUTED M1 ( 6400 280 ) VIA12_1cut_V ( * 500 ) VIA23_1cut W
+   + USE SIGNAL ;
+- Carry
+   ( PIN Carry )
+   ( B1 Z )
+   + ROUTED M1 ( 5700 280 ) VIA12_1cut_V ( 5800 * )
+   NEW M2 ( 5800 100 ) ( * 280 )
+   NEW M2 ( 5800 300 ) VIA23_1cut W
+   NEW M3 ( 5540 300 ) ( 5800 * ) VIA34_1cut W
+   + USE SIGNAL ;
+- Clock
+   ( PIN Clock )
+   ( mux1 I0 )
+   + ROUTED M2 ( 1100 3200 ) VIA23_1cut W
+   NEW M3 ( 315 3300 ) ( 1085 * )
+   + USE SIGNAL ;
+- Scan_clk
+   ( PIN Scan_clk )
+   ( mux1 I1 )
+   + ROUTED M2 ( 400 2900 ) ( * 3000 )
+   NEW M2 ( 400 2900 ) VIA23_1cut W
+   NEW M3 ( 340 2900 ) ( 400 * )
+   + USE SIGNAL ;
+- Scan_en
+   ( PIN Scan_en )
+   ( mux1 S )
+   + ROUTED M1 ( 100 3080 ) VIA12_1cut W
+   NEW M2 ( 100 2900 ) ( * 3080 )
+   NEW M2 ( 100 3100 ) VIA23_1cut W
+   + USE SIGNAL ;
+- cg_en
+   ( PIN cg_en )
+   ( gate A2 )
+   + ROUTED M1 ( 500 6020 ) VIA12_1cut W
+   + USE SIGNAL ;
+- gen_clk_mux
+   ( PIN gen_clk_mux )
+   + USE SIGNAL ;
+- n4
+   ( reg1 Q )
+   ( G5 A1 )
+   ( G4 A1 )
+   ( G1 A1 )
+   + ROUTED M1 ( 3310 4760 ) ( 3400 * ) VIA12_1cut W
+   NEW M2 ( 5195 5850 ) ( * 5880 )
+   NEW M2 ( 5200 5850 ) ( * 5880 )
+   NEW M2 ( 3400 4800 ) VIA23_1cut W ( 5185 * )
+   NEW M2 ( 5200 4900 ) VIA23_1cut W
+   NEW M2 ( 3100 5300 ) ( * 5900 )
+   NEW M2 ( 3100 5300 ) VIA23_1cut W ( 3400 * ) VIA23_1cut W
+   NEW M2 ( 3400 4800 ) ( * 5300 )
+   NEW M1 ( 5195 5880 ) VIA12_1cut_V ( * 5910 )
+   NEW M2 ( 5200 5880 ) ( * 5910 )
+   NEW M2 ( 5200 4900 ) ( 5470 * ) VIA12_1cut_V
+   NEW M2 ( 5200 4900 ) ( * 5825 )
+   + USE SIGNAL ;
+- n5
+   ( reg2 Q )
+   ( G4 A2 )
+   ( G3 A1 )
+   ( G1 A2 )
+   + ROUTED M2 ( 3800 5900 ) VIA23_1cut W ( 5285 * )
+   NEW M1 ( 5330 6020 ) VIA12_1cut W
+   NEW M1 ( 3730 1540 ) ( 4100 * ) VIA12_1cut W
+   NEW M2 ( 4100 1340 ) ( * 1500 ) VIA23_1cut W
+   NEW M3 ( 3840 1500 ) ( 4100 * ) VIA34_1cut W ( * 2900 ) VIA34_1cut W ( 5300 * )
+   NEW M3 ( 5300 2900 ) ( 6000 * ) VIA23_1cut W ( * 3025 )
+   NEW M2 ( 5300 6000 ) VIA23_1cut W
+   NEW M2 ( 5300 5800 ) ( * 6000 )
+   NEW M1 ( 6030 3080 ) VIA12_1cut_V
+   NEW M3 ( 5300 2900 ) VIA34_1cut W ( * 5800 ) VIA34_1cut W
+   + USE SIGNAL ;
+- n6
+   ( reg3 Q )
+   ( G5 A2 )
+   ( G3 A2 )
+   ( G2 A2 )
+   + ROUTED M3 ( 5500 3000 ) ( 6200 * ) VIA23_1cut W
+   NEW M2 ( 6200 2800 ) ( * 2985 ) VIA12_1cut W
+   NEW M1 ( 5600 4900 ) VIA12_1cut_V
+   NEW M2 ( 5600 4700 ) ( * 4900 )
+   NEW M2 ( 5500 4700 ) ( 5600 * )
+   NEW M2 ( 4930 4700 ) VIA23_1cut W ( 5500 * ) VIA23_1cut W
+   NEW M2 ( 5500 3000 ) VIA23_1cut W
+   NEW M2 ( 5500 3000 ) ( * 4700 )
+   NEW M1 ( 5575 4860 ) ( * 4910 )
+   NEW M1 ( 5600 4860 ) ( * 4910 )
+   NEW M3 ( 3900 3000 ) ( 5500 * )
+   NEW M3 ( 3900 2900 ) ( * 3000 )
+   NEW M3 ( 3500 2900 ) ( 3900 * )
+   NEW M2 ( 3500 2900 ) VIA23_1cut W
+   NEW M2 ( 3500 2520 ) ( * 2900 )
+   NEW M1 ( 3450 2520 ) VIA12_1cut_V
+   + USE SIGNAL ;
+- n7
+   ( G1 Z )
+   ( G2 A1 )
+   + ROUTED M1 ( 4010 5600 ) ( 4100 * ) VIA12_1cut W
+   NEW M2 ( 4100 4900 ) ( * 5600 )
+   + USE SIGNAL ;
+- n8
+   ( G2 Z )
+   ( reg5 D )
+   + ROUTED M1 ( 3800 2240 ) VIA12_1cut_V
+   NEW M2 ( 3700 2400 ) VIA23_1cut_V W
+   NEW M3 ( 3540 2400 ) ( 3700 * )
+   NEW M3 ( 3800 2400 ) VIA34_1cut W ( * 4400 ) VIA34_1cut W ( 5100 * ) VIA23_1cut W ( * 4760 ) VIA12_1cut W
+   NEW M1 ( 5000 4760 ) ( 5100 * )
+   + USE SIGNAL ;
+- n9
+   ( G3 Z )
+   ( G7 A1 )
+   + ROUTED M1 ( 6390 3360 ) ( 6500 * ) VIA12_1cut W
+   NEW M2 ( 6500 3160 ) ( * 3300 ) VIA23_1cut W
+   NEW M3 ( 6200 3300 ) ( 6500 * )
+   NEW M3 ( 6200 3300 ) VIA34_1cut W ( * 5500 ) VIA34_1cut W
+   NEW M3 ( 5940 5500 ) ( 6200 * ) VIA23_1cut W ( * 5880 ) VIA12_LONG_HH
+   + USE SIGNAL ;
+- n10
+   ( G4 Z )
+   ( G7 A2 )
+   + ROUTED M1 ( 6400 5880 ) VIA12_1cut_V
+   NEW M2 ( 6400 5800 ) ( * 5880 )
+   NEW M2 ( 6400 5880 ) ( * 6000 ) VIA23_1cut W
+   NEW M3 ( 5600 6000 ) ( 6400 * )
+   NEW M2 ( 5600 6000 ) VIA23_1cut W
+   NEW M2 ( 5600 5800 ) ( * 6000 )
+   NEW M1 ( 5600 6020 ) VIA12_LONG_HH
+   + USE SIGNAL ;
+- n11
+   ( G5 Z )
+   ( G6 A2 )
+   + ROUTED M1 ( 5800 4760 ) VIA12_1cut W
+   NEW M2 ( 5800 4500 ) ( * 4760 )
+   NEW M2 ( 5800 4500 ) VIA23_1cut W
+   NEW M3 ( 5000 4500 ) ( 5800 * )
+   NEW M3 ( 5000 4500 ) VIA34_1cut W
+   NEW M4 ( 5000 1700 ) ( * 4500 )
+   NEW M3 ( 5000 1700 ) VIA34_1cut W
+   NEW M3 ( 4740 1700 ) ( 5000 * ) VIA23_1cut W
+   NEW M2 ( 5000 1400 ) ( * 1700 )
+   NEW M1 ( 5000 1400 ) VIA12_1cut W
+   + USE SIGNAL ;
+- n12
+   ( G7 Z )
+   ( G6 A1 )
+   + ROUTED M1 ( 6660 5600 ) VIA12_1cut_V
+   NEW M1 ( 4800 1400 ) VIA12_1cut W
+   NEW M2 ( 4800 1200 ) ( * 1400 ) VIA23_1cut W
+   NEW M3 ( 4540 1400 ) ( 4800 * ) VIA34_1cut W ( * 5600 ) VIA34_1cut W ( 6600 * ) VIA23_1cut W
+   + USE SIGNAL ;
+- n13
+   ( G6 Z )
+   ( reg4 D )
+   + ROUTED M1 ( 3500 4060 ) VIA12_1cut W ( * 4150 )
+   NEW M2 ( 3500 3920 ) ( * 4000 ) VIA23_1cut W
+   NEW M3 ( 3240 4000 ) ( 3500 * ) VIA34_1cut W
+   NEW M4 ( 3500 1600 ) ( * 4000 )
+   NEW M3 ( 3500 1600 ) VIA34_1cut W
+   NEW M3 ( 3500 1600 ) ( 5300 * ) VIA23_1cut W
+   NEW M2 ( 5300 1400 ) ( * 1540 ) VIA12_1cut W
+   + USE SIGNAL ;
+- n14
+   ( reg4 Q )
+   ( B1 I )
+   + ROUTED M1 ( 6390 3780 ) ( 6500 * ) VIA12_1cut W
+   NEW M2 ( 6500 3580 ) ( * 3700 ) VIA23_1cut W
+   NEW M3 ( 5400 3700 ) ( 6500 * )
+   NEW M3 ( 5400 3700 ) VIA34_1cut W
+   NEW M4 ( 5400 700 ) ( * 3700 )
+   NEW M3 ( 5400 700 ) VIA34_1cut W
+   NEW M3 ( 5140 700 ) ( 5400 * ) VIA23_1cut W
+   NEW M2 ( 5400 420 ) ( * 700 )
+   NEW M1 ( 5400 420 ) VIA12_1cut W
+   + USE SIGNAL ;
+- n15
+   ( reg5 Q )
+   ( B2 I )
+   + ROUTED M1 ( 6100 420 ) VIA12_1cut W ( * 1960 )
+   NEW M2 ( 6100 1960 ) ( 6640 * ) VIA12_1cut_EN1415 W
+   + USE SIGNAL ;
+- CLK
+   ( CLK_B1 Z )
+   ( reg5 CP )
+   ( reg4 CP )
+   ( reg3 CP )
+   ( reg2 CP )
+   ( reg1 CP )
+   + ROUTED M1 ( 1800 5740 ) VIA12_1cut W
+   NEW M2 ( 1800 5540 ) ( * 5700 ) VIA23_1cut W
+   NEW M3 ( 1000 5700 ) ( 1800 * )
+   NEW M3 ( 1000 5700 ) VIA34_1cut W
+   NEW M4 ( 1000 5000 ) ( * 5700 )
+   NEW M3 ( 1000 5000 ) VIA34_1cut W
+   NEW M2 ( 4500 2200 ) VIA23_1cut
+   NEW M3 ( 4300 2200 ) ( 4500 * )
+   NEW M3 ( 4300 4000 ) VIA34_1cut W
+   NEW M4 ( 4300 2200 ) ( * 4000 )
+   NEW M3 ( 4300 2200 ) VIA34_1cut W
+   NEW M3 ( 1400 2200 ) ( 4300 * )
+   NEW M3 ( 1400 1400 ) VIA34_1cut W ( * 2200 )
+   NEW M2 ( 1100 5000 ) VIA23_1cut_V W ( 1400 * ) VIA34_1cut W
+   NEW M4 ( 1400 2200 ) ( * 5000 )
+   NEW M2 ( 1400 2200 ) VIA23_1cut VIA34_1cut W
+   NEW M2 ( 1400 1400 ) VIA23_1cut ( 1660 * )
+   NEW M2 ( 4300 4000 ) VIA23_1cut
+   NEW M3 ( 4040 4000 ) ( 4300 * )
+   + USE SIGNAL ;
+- mux_clock
+   ( mux1 Z )
+   ( gate A1 )
+   + ROUTED M1 ( 295 5880 ) VIA12_1cut_V
+   NEW M2 ( 300 5600 ) ( * 5800 ) VIA23_1cut W ( 600 * ) VIA34_1cut W
+   NEW M4 ( 600 3600 ) ( * 5800 )
+   NEW M3 ( 600 3600 ) VIA34_1cut W
+   NEW M3 ( 600 3600 ) ( 1400 * ) VIA23_1cut W
+   NEW M2 ( 1400 3420 ) ( * 3600 )
+   NEW M1 ( 1400 3420 ) VIA12_LONG_HH
+   + USE SIGNAL ;
+- gated_clock
+   ( gate Z )
+   ( CLK_B1 I )
+   + ROUTED M1 ( 650 5880 ) ( 800 * ) VIA12_1cut W
+   NEW M2 ( 800 5700 ) ( * 5880 )
+   NEW M2 ( 800 5900 ) VIA23_1cut W ( 1500 * ) VIA23_1cut W
+   NEW M2 ( 1500 5700 ) ( * 5880 ) VIA12_1cut W
+   + USE SIGNAL ;
+END NETS
+END DESIGN

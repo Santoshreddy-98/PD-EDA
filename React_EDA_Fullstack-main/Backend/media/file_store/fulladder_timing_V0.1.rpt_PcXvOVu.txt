@@ -1,0 +1,697 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -nworst 10
+        -max_paths 100
+        -slack_lesser_than 10000.00
+        -report_by design
+Design : fulladdder
+Version: R-2020.09-SP5
+Date   : Mon Nov 14 23:41:23 2022
+****************************************
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G1/Z (XOR2SGD0BWP30P140)                         0.07      0.31 f
+  G2/Z (XOR2SGD0BWP30P140)                         0.05      0.36 r
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.36 r
+  data arrival time                                          0.36
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.04
+
+
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G1/Z (XOR2SGD0BWP30P140)                         0.08      0.32 r
+  G2/Z (XOR2SGD0BWP30P140)                         0.04      0.36 r
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.36 r
+  data arrival time                                          0.36
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.03
+
+
+
+  Startpoint: reg1 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg1/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg1/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.25      0.25 f
+  G1/Z (XOR2SGD0BWP30P140)                         0.05      0.30 f
+  G2/Z (XOR2SGD0BWP30P140)                         0.05      0.35 r
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.35 r
+  data arrival time                                          0.35
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.03
+
+
+
+  Startpoint: reg1 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg1/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg1/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.25      0.25 f
+  G1/Z (XOR2SGD0BWP30P140)                         0.07      0.31 r
+  G2/Z (XOR2SGD0BWP30P140)                         0.04      0.35 r
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.35 r
+  data arrival time                                          0.35
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.03
+
+
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G1/Z (XOR2SGD0BWP30P140)                         0.08      0.32 r
+  G2/Z (XOR2SGD0BWP30P140)                         0.05      0.37 f
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: reg1 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg1/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg1/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.25      0.25 f
+  G1/Z (XOR2SGD0BWP30P140)                         0.07      0.31 r
+  G2/Z (XOR2SGD0BWP30P140)                         0.05      0.36 f
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.36 f
+  data arrival time                                          0.36
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G1/Z (XOR2SGD0BWP30P140)                         0.07      0.31 f
+  G2/Z (XOR2SGD0BWP30P140)                         0.04      0.35 f
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.35 f
+  data arrival time                                          0.35
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.01
+
+
+
+  Startpoint: reg3 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg3/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg3/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G2/Z (XOR2SGD0BWP30P140)                         0.07      0.31 r
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.31 r
+  data arrival time                                          0.31
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.31
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.01
+
+
+
+  Startpoint: reg1 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg1/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg1/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.25      0.25 f
+  G4/Z (AN2SGD0BWP30P140)                          0.04      0.29 f
+  G7/Z (OR2SGD1BWP30P140)                          0.03      0.32 f
+  G6/Z (OR2SGD1BWP30P140)                          0.03      0.35 f
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.35 f
+  data arrival time                                          0.35
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: reg1 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg1/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg1/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.25      0.25 f
+  G1/Z (XOR2SGD0BWP30P140)                         0.05      0.30 f
+  G2/Z (XOR2SGD0BWP30P140)                         0.04      0.34 f
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.34 f
+  data arrival time                                          0.34
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G4/Z (AN2SGD0BWP30P140)                          0.04      0.28 f
+  G7/Z (OR2SGD1BWP30P140)                          0.03      0.31 f
+  G6/Z (OR2SGD1BWP30P140)                          0.03      0.34 f
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.34 f
+  data arrival time                                          0.34
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: reg3 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg3/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg3/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G3/Z (AN2SGD0BWP30P140)                          0.04      0.28 f
+  G7/Z (OR2SGD1BWP30P140)                          0.03      0.31 f
+  G6/Z (OR2SGD1BWP30P140)                          0.03      0.34 f
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.34 f
+  data arrival time                                          0.34
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G3/Z (AN2SGD0BWP30P140)                          0.04      0.28 f
+  G7/Z (OR2SGD1BWP30P140)                          0.03      0.31 f
+  G6/Z (OR2SGD1BWP30P140)                          0.03      0.34 f
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.34 f
+  data arrival time                                          0.34
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg5 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.17      0.17 r
+  G1/Z (XOR2SGD0BWP30P140)                         0.07      0.24 f
+  G2/Z (XOR2SGD0BWP30P140)                         0.05      0.30 r
+  reg5/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.30 r
+  data arrival time                                          0.30
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg5/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.30
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: reg1 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg1/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg1/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.25      0.25 f
+  G5/Z (AN2SGD0BWP30P140)                          0.04      0.29 f
+  G6/Z (OR2SGD1BWP30P140)                          0.03      0.32 f
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.32 f
+  data arrival time                                          0.32
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.32
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.05
+
+
+
+  Startpoint: reg3 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg3/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg3/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.24      0.24 f
+  G5/Z (AN2SGD0BWP30P140)                          0.04      0.28 f
+  G6/Z (OR2SGD1BWP30P140)                          0.03      0.31 f
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.31 f
+  data arrival time                                          0.31
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.06      0.34
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.31
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: reg1 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg1/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg1/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.17      0.17 r
+  G4/Z (AN2SGD0BWP30P140)                          0.04      0.22 r
+  G7/Z (OR2SGD1BWP30P140)                          0.03      0.25 r
+  G6/Z (OR2SGD1BWP30P140)                          0.02      0.27 r
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.27 r
+  data arrival time                                          0.27
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.27
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.17      0.17 r
+  G4/Z (AN2SGD0BWP30P140)                          0.04      0.21 r
+  G7/Z (OR2SGD1BWP30P140)                          0.03      0.24 r
+  G6/Z (OR2SGD1BWP30P140)                          0.02      0.26 r
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.26 r
+  data arrival time                                          0.26
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.26
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: reg3 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg3/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg3/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.17      0.17 r
+  G3/Z (AN2SGD0BWP30P140)                          0.04      0.21 r
+  G7/Z (OR2SGD1BWP30P140)                          0.03      0.24 r
+  G6/Z (OR2SGD1BWP30P140)                          0.02      0.26 r
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.26 r
+  data arrival time                                          0.26
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.26
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: reg2 (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: reg4 (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: sys_clk
+  Path Type: max
+
+  Point                                            Incr      Path 
+  ------------------------------------------------------------------------
+  clock sys_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg2/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.00 r
+  reg2/Q (SDFQOPPSBSGD1BWP30P140HVT)               0.17      0.17 r
+  G3/Z (AN2SGD0BWP30P140)                          0.04      0.21 r
+  G7/Z (OR2SGD1BWP30P140)                          0.03      0.24 r
+  G6/Z (OR2SGD1BWP30P140)                          0.02      0.26 r
+  reg4/D (SDFQOPPSBSGD1BWP30P140HVT)               0.00      0.26 r
+  data arrival time                                          0.26
+
+  clock sys_clk (rise edge)                        0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  reg4/CP (SDFQOPPSBSGD1BWP30P140HVT)              0.00      0.50 r
+  clock uncertainty                               -0.10      0.40
+  library setup time                              -0.09      0.31
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.26
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07

@@ -1,0 +1,9 @@
+npm i @coreui/react
+npm install --force react-scripts
+npm i --force react-router-dom
+npm i --force axios
+npm install --force react-icons --save
+npm i --force react-simple-chatbot
+npm i --force styled-components
+npm i --force react-zoom-pan-pinch
+npm i react-konva konva

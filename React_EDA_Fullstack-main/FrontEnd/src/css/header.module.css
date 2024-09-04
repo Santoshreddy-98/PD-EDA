@@ -1,0 +1,204 @@
+header.module.css
+*{
+    padding: 0;
+    margin: 0;
+}
+li, a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    padding: 30px 10px;
+    height: 5rem;
+    background-color: #24252A;
+}
+.logo{
+    cursor: pointer;
+    width: 50px;
+    
+}
+.nav__link{
+   list-style: none;
+}
+.nav__link li{
+    display: inline-block;
+    padding: 0px 20px; 
+}
+.nav-link li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__link li a:hover{
+    color: #0088a9;
+}
+.nav__link li a{
+    color: #fff;   
+}
+.social_media_desktop{
+    list-style: none;
+   
+}
+.social_media_desktop li{
+    display: inline-block;
+    padding: 0px 10px; 
+}
+.text{
+    font-size: 10px;
+    list-style: none;
+    color: #fff;
+}
+.text li a {
+    color: #fff;
+}
+.social_media ul li{
+    font-size: 1.5rem;
+}
+
+.social_media_desktop li a{
+    transition: all 0.3s ease 0s;
+    font-size: 10px;
+    color: #fff;
+}
+.social_media_desktop li a:hover{
+    color: #0088a9;
+}
+.social_media_desktop li a .name:hover{
+    color: #0088a9;
+}
+.dropdown .hamburger_menu {
+    display: none;
+}
+.dropdown{
+    margin-left: 10px;
+}
+
+   
+
+
+/************ Media query started here  **********/
+
+@media (max-width: 800px){
+    .nav__link{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
+   
+    .dropdown .hamburger_menu {
+        display: block;
+        float: right;
+        }
+    .social_media_desktop li {
+        margin: 25px auto;
+        padding: 20px;
+    }
+    .dropdown .menubar{
+        position: fixed;
+        right: 0;
+        margin-top: 50px;
+        background-color: black;
+        width: 30%;
+        padding: 30px;
+        list-style: none;
+        height: 30vh;
+        display: block;
+        text-align: center;
+        font-weight: 1rem;
+        transition: all 0.3s ease;
+
+    }
+    .social_media_desktop{
+        position: fixed;
+        top: -100%;
+        right: 0;
+        margin-top: 50px;
+        background-color: black;
+        width: 30%;
+        padding: 30px;
+        list-style: none;
+        height: 35vh;
+        display: block;
+        text-align: center;
+        font-weight: 1rem;
+        transition: all 0.3s ease;
+        
+    }
+    .dropdown ul li {
+        padding: 10px 0;
+    }
+
+    .dropdown ul li a {
+        display: block;
+        font-size: 10px;
+        
+        /* margin-top: 10px;
+        padding: 20px; */
+    }
+
+    /* .dropdown .social_media_desktop{
+        background-color: #24252A;
+        height: 20rem;
+        display: grid;
+        margin-top: 3rem;
+        align-items: center;
+        color: white;
+        width: 200px;
+        padding: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      } */
+      
+    
+      /* .dropdown {
+        height: 20rem;
+        display: block;
+        position: absolute;
+        padding: 20px;
+        color: white;
+        left: -100%;
+        z-index: 1000;
+      } */
+
+}
+
+@media (max-width: 550px){
+    .nav__link{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
+   
+    .dropdown .hamburger_menu {
+        display: block;
+        float: right;
+        }
+    .social_media_desktop li {
+        margin: 15px auto;
+        padding: 20px;
+    }
+    .dropdown .menubar{
+        position: fixed;
+        right: 0;
+        margin-top: 50px;
+        background-color: black;
+        width: 40%;
+        padding: 30px;
+        list-style: none;
+        height: 30vh;
+        display: block;
+        text-align: center;
+        font-weight: 1rem;
+        transition: all 0.3s ease;
+
+    }
+
+}
+
+/************* Media query ended here  *********/
