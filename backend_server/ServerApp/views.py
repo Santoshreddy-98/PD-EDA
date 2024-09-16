@@ -16,6 +16,8 @@ from .serializers import DashboardSerialzer, DetailDashboardSerializer
 from .detail_dashboard.main import MainController
 from .chart_data.chart_parser import Chart
 from django.shortcuts import get_object_or_404
+from .eda_parsers import main_parser
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # logger = logging.getLogger(__name__)
 django_logger = logging.getLogger('django')
@@ -328,9 +330,28 @@ class SelectMainRun(APIView):
 
 
 # ***********  Detail Dashboard ************
+def execute_concurrently(mainObj, pro_checker):
+    
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        futures = {
+            executor.submit(mainObj.run_main): "parsed_data",
+            executor.submit(main_parser.process_files, pro_checker['Input']): "timing_data"
+        }
+        
+        results = {}
+        for future in as_completed(futures):
+            
+            name = futures[future]
+    
+            try:
+                results[name] = future.result()
+            except Exception as exc:
+                logging.error(f'{name} generated an exception: {exc}')
+                results[name] = {"error": str(exc)}
+    # print(results)
+    return results['parsed_data'], results['timing_data']
 
 class DetailDashboard(APIView):
-
     def post(self, request, format=None):
         request_data = request.data
 
@@ -338,6 +359,7 @@ class DetailDashboard(APIView):
 
         final_main_data = defaultdict(dict)
         list_of_main_data = list()
+        
         count = 1
 
         if yaml_Data:
@@ -345,18 +367,32 @@ class DetailDashboard(APIView):
                 mainObj = MainController(yaml_Data)
                 pro_checker = mainObj.read_yaml_and_convert_to_json()
                 project_name = pro_checker['Project']['Project_Name']
+                
+                
                 detail_id = DetailDashboarParser.objects.filter(
                     project_name=pro_checker['Project']['Project_Name']).exists()
-                main_id = DashboardParser.objects.filter(
-                    project_name=pro_checker['Project']['Project_Name']).exists()
+
+                if detail_id: 
                 
-                if detail_id:
-                    
                     detail_instance, _ = DetailDashboarParser.objects.get_or_create(
                         project_name=project_name)
+                 
                     main_instance, _ = DashboardParser.objects.get_or_create(
                         project_name=project_name)
-                    parsed_data = mainObj.run_main()
+                 
+                    parsed_data, timing_data = execute_concurrently(mainObj, pro_checker)
+                    
+                    
+                    if "error" in parsed_data or "error" in timing_data:
+                        return Response({
+                            "success": False,
+                            "message": "Error processing files.",
+                            "details": {
+                                "parsed_data_error": parsed_data.get("error"),
+                                "timing_data_error": timing_data.get("error")
+                            }
+                        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
                     # Update the existing instances' content
                     detail_instance.content = parsed_data[0]
                     main_instance.content = [
@@ -374,11 +410,12 @@ class DetailDashboard(APIView):
                             'pre_info': [],
                             'pre_PLA': [],
                             'pre_ETA': []
-                        } for count, i in enumerate(parsed_data[0], start=1)if i.get('Stage') == 'route'
+                        } for count, i in enumerate(parsed_data[0], start=1) if i.get('Stage') == 'route'
                     ]
+                    
                     # Use serializers to validate and save the changes
                     detail_serializer = DetailDashboardSerializer(
-                        detail_instance, data={'content': parsed_data[0]}, partial=True)
+                        detail_instance, data={'content': parsed_data[0], "timing_data": timing_data}, partial=True)
                     main_serializer = DashboardSerialzer(
                         main_instance, data={'content': main_instance.content}, partial=True)
 
@@ -405,12 +442,23 @@ class DetailDashboard(APIView):
                         }, status=status.HTTP_400_BAD_REQUEST)
 
                 else:
-                    parsed_data = mainObj.run_main()
-                   
+                    
+                    parsed_data, timing_data = execute_concurrently(mainObj, pro_checker)
+                    
+                    
+                    if "error" in parsed_data or "error" in timing_data:
+                        return Response({
+                            "success": False,
+                            "message": "Error processing files.",
+                            "details": {
+                                "parsed_data_error": parsed_data.get("error"),
+                                "timing_data_error": timing_data.get("error")
+                            }
+                        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
                     pattern = re.compile(rf'(\b[\w-]*route[\w-]*\b)', re.IGNORECASE)
                     for i in parsed_data[0]:
                         if pattern.search(i['Stage']):
-                        
                             final_main_data = {
                                 'S_no': count,
                                 'Partition_Name': i["Partition_Name"],
@@ -429,39 +477,51 @@ class DetailDashboard(APIView):
 
                             list_of_main_data.append(final_main_data)
                             count += 1
+                    
                     detail_data_store = {
                         "project_name": parsed_data[1],
-                        'content': parsed_data[0]
+                        'content': parsed_data[0],
+                        "timing_data": timing_data
                     }
 
                     main_data_store = {
                         "project_name": parsed_data[1],
                         'content': list_of_main_data
                     }
-                 
+
                     serializer_DetailDashboard = DetailDashboardSerializer(
                         data=detail_data_store)
-                   
+                
                     serializer_MainDashboard = DashboardSerialzer(
                         data=main_data_store)
 
                     if serializer_DetailDashboard.is_valid() and serializer_MainDashboard.is_valid():
                         serializer_DetailDashboard.save()
                         serializer_MainDashboard.save()
-                        return Response({"success": True, "message": "Upload successful",
-                                         "mainDashboard_ID": serializer_MainDashboard.data['id'],
-                                         "detailDashboard_ID": serializer_DetailDashboard.data['id'],
-                                         "partition_stages": serializer_DetailDashboard.data['content'][0]['partition_stages']},
-                                        status=status.HTTP_201_CREATED)
+                        return Response({
+                            "success": True,
+                            "message": "Upload successful",
+                            "mainDashboard_ID": serializer_MainDashboard.data['id'],
+                            "detailDashboard_ID": serializer_DetailDashboard.data['id'],
+                            "partition_stages": serializer_DetailDashboard.data['content'][0]['partition_stages']
+                        }, status=status.HTTP_201_CREATED)
                     else:
                         # Return a JSON response indicating validation errors
-                        return Response({"success": False, "errors": serializer_DetailDashboard.errors}, status=status.HTTP_400_BAD_REQUEST)
+                        return Response({
+                            "success": False,
+                            "errors": {
+                                "detail_errors": serializer_DetailDashboard.errors,
+                                "main_errors": serializer_MainDashboard.errors
+                            }
+                        }, status=status.HTTP_400_BAD_REQUEST)
             except Exception as e:
-                error_message = f"Error:{str(e)}"
+                error_message = f"Error: {str(e)}"
                 logging.error(error_message)
-                return Response({"success": False, "message": f"{str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
+                return Response({
+                    "success": False,
+                    "message": f"{str(e)}"
+                }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            
 class Multirun(APIView):
     def get(self, request, format=None):
         """

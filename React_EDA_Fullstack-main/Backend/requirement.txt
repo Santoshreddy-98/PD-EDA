@@ -1,7 +1,0 @@
-Django
-djangorestframework
-pandas
-numpy
-django-cors-headers
-Pillow
-
