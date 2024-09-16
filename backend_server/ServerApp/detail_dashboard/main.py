@@ -26,6 +26,7 @@ class MainController:
                 logger.info('YAML file read')
 
             data_dict = yaml.safe_load(yaml_data)
+            
             return data_dict
         except Exception as e:
             logger.error(f"Error reading YAML file: {str(e)}")
@@ -48,6 +49,7 @@ class MainController:
 
                     data = self.list_directory_contents(
                         partition['DIR'], jsonData)
+                print(data)
                 return data, jsonData['Project']['Project_Name']
         except Exception as e:
             logger.exception(f"Error in run_main: {str(e)}")
@@ -92,3 +94,5 @@ class MainController:
                     f"Directory '{dirPath}' does not exist or is not a valid directory.")
         except Exception as e:
             logger.exception(f"Error listing contents for directory: {str(e)}")
+
+

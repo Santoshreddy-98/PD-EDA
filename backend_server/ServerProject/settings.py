@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-w#8-ha+89kqec^rwuv$8s=!(*4t522s-5mi$s&xo^2#o=h4gv3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.16.90.29']
+ALLOWED_HOSTS = ['172.16.90.29', '127.0.0.1']
 
 
 # Application definition
@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'backend',
         'USER': 'root',
-        'PASSWORD': 'Welcome@1234',
+        'PASSWORD': 'david2000',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-DJANGO_LOG_DIR = '/home/vijay7396/CoE_PD/logs/python_logs/'
+DJANGO_LOG_DIR = '/home/dell/P2F/Combine_COE_EDA/logs/python_logs/'
 
 # Ensure the Django log directory exists
 os.makedirs(DJANGO_LOG_DIR, exist_ok=True)
