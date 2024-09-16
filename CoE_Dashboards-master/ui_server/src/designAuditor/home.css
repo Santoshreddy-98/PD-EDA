@@ -1,0 +1,41 @@
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    /* border-radius: 195px; */
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Table Header Styles */
+thead {
+    background-color: #f2f2f2;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Alternate Row Styles */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Button Styles */
+.btn {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+

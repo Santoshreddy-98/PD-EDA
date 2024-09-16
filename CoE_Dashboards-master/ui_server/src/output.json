@@ -1,0 +1,58 @@
+{
+  "floorplan": {
+    "area": {
+      "InstCount": "1089025",
+      "TotalArea": "12365855.698"
+    },
+    "hold": {
+      "HoldReg2RegWNS": "8.304",
+      "HoldReg2RegTNS": "0.0",
+      "HoldReg2RegNVP": "0",
+      "HoldIOWNS": "102.708",
+      "HoldIOTNS": "0.0",
+      "HoldIONVP": "0"
+    },
+    "power": {
+      "InternalPower": "9.08297536",
+      "SwitchingPower": "1.56393588",
+      "leakagePower": "0.03896137",
+      "TotalPower": "10.68587261"
+    },
+    "setup": {
+      "SetupReg2RegWNS": "1.354",
+      "SetupReg2RegTNS": "0.0",
+      "SetupReg2RegNVP": "0",
+      "SetupIOWNS": "-2.508",
+      "SetupIOTNS": "-4.118",
+      "SetupIONVP": "2"
+    }
+  },
+  "cts": {
+    "area": {
+      "InstCount": "189025",
+      "TotalArea": "1365855.698"
+    },
+    "hold": {
+      "HoldReg2RegWNS": "8.04",
+      "HoldReg2RegTNS": "0.0",
+      "HoldReg2RegNVP": "0",
+      "HoldIOWNS": "10.08",
+      "HoldIOTNS": "0.0",
+      "HoldIONVP": "0"
+    },
+    "power": {
+      "InternalPower": "9.0536",
+      "SwitchingPower": "1.3588",
+      "leakagePower": "0.6137",
+      "TotalPower": "10.87261"
+    },
+    "setup": {
+      "SetupReg2RegWNS": "1.4",
+      "SetupReg2RegTNS": "0.0",
+      "SetupReg2RegNVP": "0",
+      "SetupIOWNS": "-2.8",
+      "SetupIOTNS": "-4.8",
+      "SetupIONVP": "1"
+    }
+  }
+}
