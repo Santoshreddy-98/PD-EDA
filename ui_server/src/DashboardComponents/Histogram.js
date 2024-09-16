@@ -10,7 +10,7 @@ function App() {
   })
 
   return (
-    <CContainer style={{zoom: "0.8", border: "2px solid powderblue"}}>
+    <CContainer style={{zoom: "0.8", border: "3px solid powderblue"}}>
         <Histogram1  data={a} />   
     </CContainer>
   );
