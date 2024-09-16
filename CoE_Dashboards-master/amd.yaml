@@ -1,0 +1,27 @@
+Project:
+  Project_Name: s5_chn1_t_nlc
+  Gate_Count: 4
+  Power_unit: W
+
+Partitions:
+
+  - Partition_Name: s5_chn1_t_nlc
+    Lead: Harish
+    DIR: /home/vijay7396/Vijay/Dashboard_partitions/smavpar1/proj/krk2e_pd1_ner_nobackup/adaksin/newlabel_s5_chn1_t/s5_chn1_t_nlc_coldstart_1010.main/pd/tiles/final_cold_start_run4/rpts
+
+Setup:
+  - Corner: func_ssgnp_0p675v_125c_cworst_CCworst_T
+    Group:
+      group1: heartbt_clk
+      group2: rx_ref_div_clk
+      group3: regin
+
+Hold:
+  - Corner: func_ffgnp_0p935v_0c_cbest_CCbest
+    Group:
+      group1: heartbt_clk
+      group3: tx_synth_div_clk
+      group4: rx_llpd_clk
+
+Power:
+  Corner: func_ffgnp_0p935v_0c_cbest_CCbest

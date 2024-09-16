@@ -1,0 +1,58 @@
+[
+  {
+    "placement": {
+      "setup": {
+        "reg2reg": {
+          "wns": 0.3,
+          "tns": 0.4,
+          "fep": 1
+        },
+        "clock_gate": {
+          "wns": 0.1,
+          "tns": 0.2,
+          "fep": 0.5
+        }
+      },
+      "trans_viol": 0.4,
+      "max_cap": 1,
+      "utils %": 12,
+      "congestion": 50
+    }
+  },
+  {
+    "cts": {
+      "setup": {
+        "reg2reg": {
+          "wns": 0.3,
+          "tns": 0.4,
+          "fep": 1
+        },
+        "clock_gate": {
+          "wns": 0.1,
+          "tns": 0.2,
+          "fep": 0.5
+        }
+      },
+      "hold": {
+        "reg2reg": {
+          "wns": 0.3,
+          "tns": 0.4,
+          "fep": 1
+        },
+        "clock_gate": {
+          "wns": 0.1,
+          "tns": 0.2,
+          "fep": 0.5
+        }
+      },
+      "trans_viol": 0.4,
+      "max_cap": 1,
+      "utils %": 12,
+      "congestion": 50
+    }
+  },
+  { "ETA": "" },
+  { "comments": "" },
+  { "plan_of_action": "" },
+  { "db_pointer": "" }
+]

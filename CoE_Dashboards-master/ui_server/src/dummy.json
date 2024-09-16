@@ -1,0 +1,643 @@
+[
+  {
+    "S.No": 1,
+    "Partition": "smavpar1",
+    "Leads": "Nisant",
+    "Intra viols (SPV)": {
+      "wns": -0.005,
+      "tns": -0.103,
+      "nvp": 49
+    },
+    "Intra viols (PBA)": {
+      "wns": 0,
+      "tns": 0,
+      "nvp": 0
+    },
+    "Inter viols (SPV)": {
+      "wns": 0,
+      "tns": 0,
+      "nvp": 0
+    },
+    "Inter viols (PBA)": {
+      "wns": 0,
+      "tns": 0,
+      "nvp": 0
+    },
+    "Util %\n(TRO)": 61.04,
+    "Congestion\n(preCTS)": 0.76,
+    "Shorts\n(TRO)": 50,
+    "ETA": "WW24p2",
+    "Comments ": null,
+    "Plan of Action": null,
+    "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar1_1p0_new/builds/smavpar1.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar1.ndm"
+  },
+  {
+    "S.No": 2,
+    "Partition": "smavpar2",
+    "Leads": "John",
+    "Intra viols (SPV)": {
+      "wns": 0.1,
+      "tns": 0.2,
+      "nvp": 30
+    },
+    "Intra viols (PBA)": {
+      "wns": 0.05,
+      "tns": 0.03,
+      "nvp": 5
+    },
+    "Inter viols (SPV)": {
+      "wns": 0.2,
+      "tns": 0.1,
+      "nvp": 15
+    },
+    "Inter viols (PBA)": {
+      "wns": 0.15,
+      "tns": 0.05,
+      "nvp": 10
+    },
+    "Util %\n(TRO)": 78.9,
+    "Congestion\n(preCTS)": 0.5,
+    "Shorts\n(TRO)": 20,
+    "ETA": "WW24p5",
+    "Comments ": "Needs review",
+    "Plan of Action": "Upgrade",
+    "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar2_1p0_new/builds/smavpar2.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar2.ndm"
+  },
+  {
+    "S.No": 3,
+    "Partition": "smavpar3",
+    "Leads": "Alice",
+    "Intra viols (SPV)": {
+      "wns": -0.02,
+      "tns": -0.15,
+      "nvp": 20
+    },
+    "Intra viols (PBA)": {
+      "wns": 0.1,
+      "tns": 0.03,
+      "nvp": 8
+    },
+    "Inter viols (SPV)": {
+      "wns": 0.05,
+      "tns": 0.1,
+      "nvp": 12
+    },
+    "Inter viols (PBA)": {
+      "wns": 0.08,
+      "tns": 0.02,
+      "nvp": 7
+    },
+    "Util %\n(TRO)": 54.6,
+    "Congestion\n(preCTS)": 0.8,
+    "Shorts\n(TRO)": 35,
+    "ETA": "WW24p8",
+    "Comments ": "In progress",
+    "Plan of Action": "Review",
+    "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar3_1p0_new/builds/smavpar3.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar3.ndm"
+  },
+  {
+      "S.No": 4,
+      "Partition": "smavpar4",
+      "Leads": "Eva",
+      "Intra viols (SPV)": {
+        "wns": 0.08,
+        "tns": -0.05,
+        "nvp": 25
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.1,
+        "tns": 0.03,
+        "nvp": 18
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.05,
+        "tns": 0.1,
+        "nvp": 12
+      },
+      "Inter viols (PBA)": {
+        "wns": -0.1,
+        "tns": 0.02,
+        "nvp": 7
+      },
+      "Util %\n(TRO)": 72.3,
+      "Congestion\n(preCTS)": 1.2,
+      "Shorts\n(TRO)": 42,
+      "ETA": "WW25p1",
+      "Comments ": "Complete",
+      "Plan of Action": "Closed",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar4_1p0_new/builds/smavpar4.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar4.ndm"
+    },
+    {
+      "S.No": 5,
+      "Partition": "smavpar5",
+      "Leads": "Bob",
+      "Intra viols (SPV)": {
+        "wns": -0.03,
+        "tns": 0.1,
+        "nvp": 33
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.08,
+        "tns": 0.02,
+        "nvp": 9
+      },
+      "Inter viols (SPV)": {
+        "wns": -0.05,
+        "tns": 0.05,
+        "nvp": 22
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.1,
+        "tns": 0.03,
+        "nvp": 13
+      },
+      "Util %\n(TRO)": 68.5,
+      "Congestion\n(preCTS)": 1.0,
+      "Shorts\n(TRO)": 28,
+      "ETA": "WW25p3",
+      "Comments ": "In progress",
+      "Plan of Action": "Review",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar5_1p0_new/builds/smavpar5.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar5.ndm"
+    },
+    {
+      "S.No": 6,
+      "Partition": "smavpar6",
+      "Leads": "Carol",
+      "Intra viols (SPV)": {
+        "wns": 0.02,
+        "tns": -0.03,
+        "nvp": 15
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.05,
+        "tns": 0.02,
+        "nvp": 8
+      },
+      "Inter viols (SPV)": {
+        "wns": -0.02,
+        "tns": -0.05,
+        "nvp": 20
+      },
+      "Inter viols (PBA)": {
+        "wns": -0.1,
+        "tns": -0.02,
+        "nvp": 5
+      },
+      "Util %\n(TRO)": 59.2,
+      "Congestion\n(preCTS)": 0.9,
+      "Shorts\n(TRO)": 37,
+      "ETA": "WW25p6",
+      "Comments ": "Needs review",
+      "Plan of Action": "Upgrade",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar6_1p0_new/builds/smavpar6.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar6.ndm"
+    },
+    {
+      "S.No": 7,
+      "Partition": "smavpar7",
+      "Leads": "David",
+      "Intra viols (SPV)": {
+        "wns": -0.04,
+        "tns": -0.02,
+        "nvp": 12
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.04,
+        "tns": 0.01,
+        "nvp": 6
+      },
+      "Inter viols (SPV)": {
+        "wns": -0.03,
+        "tns": 0.03,
+        "nvp": 8
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.02,
+        "nvp": 4
+      },
+      "Util %\n(TRO)": 63.7,
+      "Congestion\n(preCTS)": 1.1,
+      "Shorts\n(TRO)": 45,
+      "ETA": "WW26p1",
+      "Comments ": "Complete",
+      "Plan of Action": "Closed",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar7_1p0_new/builds/smavpar7.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar7.ndm"
+    },
+    {
+      "S.No": 8,
+      "Partition": "smavpar8",
+      "Leads": "Eve",
+      "Intra viols (SPV)": {
+        "wns": 0.01,
+        "tns": -0.01,
+        "nvp": 10
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.03,
+        "tns": 0.02,
+        "nvp": 7
+      },
+      "Inter viols (SPV)": {
+        "wns": -0.02,
+        "tns": -0.03,
+        "nvp": 9
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.01,
+        "nvp": 3
+      },
+      "Util %\n(TRO)": 66.1,
+      "Congestion\n(preCTS)": 0.7,
+      "Shorts\n(TRO)": 22,
+      "ETA": "WW26p3",
+      "Comments ": "In progress",
+      "Plan of Action": "Review",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar8_1p0_new/builds/smavpar8.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar8.ndm"
+    },
+    {
+      "S.No": 9,
+      "Partition": "smavpar9",
+      "Leads": "Frank",
+      "Intra viols (SPV)": {
+        "wns": 0.03,
+        "tns": 0.02,
+        "nvp": 14
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.01,
+        "nvp": 7
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.01,
+        "tns": 0.03,
+        "nvp": 11
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.04,
+        "tns": 0.02,
+        "nvp": 5
+      },
+      "Util %\n(TRO)": 70.4,
+      "Congestion\n(preCTS)": 0.9,
+      "Shorts\n(TRO)": 31,
+      "ETA": "WW26p5",
+      "Comments ": "Needs review",
+      "Plan of Action": "Upgrade",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar9_1p0_new/builds/smavpar9.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar9.ndm"
+    },
+    {
+      "S.No": 10,
+      "Partition": "smavpar10",
+      "Leads": "Grace",
+      "Intra viols (SPV)": {
+        "wns": -0.05,
+        "tns": -0.02,
+        "nvp": 9
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.05,
+        "tns": 0.03,
+        "nvp": 12
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.03,
+        "tns": 0.04,
+        "nvp": 8
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.01,
+        "nvp": 4
+      },
+      "Util %\n(TRO)": 57.8,
+      "Congestion\n(preCTS)": 1.0,
+      "Shorts\n(TRO)": 28,
+      "ETA": "WW26p7",
+      "Comments ": "In progress",
+      "Plan of Action": "Review",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar10_1p0_new/builds/smavpar10.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar10.ndm"
+    },
+    {
+      "S.No": 11,
+      "Partition": "smavpar11",
+      "Leads": "Helen",
+      "Intra viols (SPV)": {
+        "wns": 0.03,
+        "tns": -0.03,
+        "nvp": 18
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.01,
+        "nvp": 6
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.02,
+        "tns": 0.02,
+        "nvp": 10
+      },
+      "Inter viols (PBA)": {
+        "wns": -0.01,
+        "tns": -0.01,
+        "nvp": 3
+      },
+      "Util %\n(TRO)": 68.2,
+      "Congestion\n(preCTS)": 0.6,
+      "Shorts\n(TRO)": 25,
+      "ETA": "WW26p9",
+      "Comments ": "Complete",
+      "Plan of Action": "Closed",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar11_1p0_new/builds/smavpar11.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar11.ndm"
+    },
+    {
+      "S.No": 12,
+      "Partition": "smavpar12",
+      "Leads": "Ivy",
+      "Intra viols (SPV)": {
+        "wns": -0.02,
+        "tns": 0.01,
+        "nvp": 9
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.03,
+        "nvp": 15
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.03,
+        "tns": -0.02,
+        "nvp": 7
+      },
+      "Inter viols (PBA)": {
+        "wns": -0.02,
+        "tns": 0.01,
+        "nvp": 10
+      },
+      "Util %\n(TRO)": 65.6,
+      "Congestion\n(preCTS)": 0.8,
+      "Shorts\n(TRO)": 32,
+      "ETA": "WW27p1",
+      "Comments ": "In progress",
+      "Plan of Action": "Review",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar12_1p0_new/builds/smavpar12.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar12.ndm"
+    },
+    {
+      "S.No": 13,
+      "Partition": "smavpar13",
+      "Leads": "Jack",
+      "Intra viols (SPV)": {
+        "wns": -0.03,
+        "tns": 0.02,
+        "nvp": 8
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.03,
+        "nvp": 12
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.01,
+        "tns": 0.01,
+        "nvp": 4
+      },
+      "Inter viols (PBA)": {
+        "wns": -0.01,
+        "tns": -0.02,
+        "nvp": 6
+      },
+      "Util %\n(TRO)": 63.5,
+      "Congestion\n(preCTS)": 1.1,
+      "Shorts\n(TRO)": 29,
+      "ETA": "WW27p3",
+      "Comments ": "Needs review",
+      "Plan of Action": "Upgrade",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar13_1p0_new/builds/smavpar13.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar13.ndm"
+    },
+    {
+      "S.No": 14,
+      "Partition": "smavpar14",
+      "Leads": "Kate",
+      "Intra viols (SPV)": {
+        "wns": 0.04,
+        "tns": -0.04,
+        "nvp": 19
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.03,
+        "tns": -0.03,
+        "nvp": 11
+      },
+      "Inter viols (SPV)": {
+        "wns": -0.02,
+        "tns": 0.01,
+        "nvp": 8
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.02,
+        "nvp": 5
+      },
+      "Util %\n(TRO)": 67.7,
+      "Congestion\n(preCTS)": 0.7,
+      "Shorts\n(TRO)": 24,
+      "ETA": "WW27p5",
+      "Comments ": "Complete",
+      "Plan of Action": "Closed",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar14_1p0_new/builds/smavpar14.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar14.ndm"
+    },
+    {
+      "S.No": 15,
+      "Partition": "smavpar15",
+      "Leads": "Liam",
+      "Intra viols (SPV)": {
+        "wns": 0.02,
+        "tns": 0.01,
+        "nvp": 7
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.02,
+        "nvp": 9
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.03,
+        "tns": 0.03,
+        "nvp": 10
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.02,
+        "nvp": 8
+      },
+      "Util %\n(TRO)": 66.3,
+      "Congestion\n(preCTS)": 0.8,
+      "Shorts\n(TRO)": 23,
+      "ETA": "WW27p7",
+      "Comments ": "In progress",
+      "Plan of Action": "Review",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar15_1p0_new/builds/smavpar15.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar15.ndm"
+    },
+    {
+      "S.No": 16,
+      "Partition": "smavpar16",
+      "Leads": "Mia",
+      "Intra viols (SPV)": {
+        "wns": -0.04,
+        "tns": -0.02,
+        "nvp": 12
+      },
+      "Intra viols (PBA)": {
+        "wns": -0.03,
+        "tns": -0.03,
+        "nvp": 5
+      },
+      "Inter viols (SPV)": {
+        "wns": -0.02,
+        "tns": -0.01,
+        "nvp": 4
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.01,
+        "nvp": 3
+      },
+      "Util %\n(TRO)": 68.8,
+      "Congestion\n(preCTS)": 1.2,
+      "Shorts\n(TRO)": 30,
+      "ETA": "WW27p9",
+      "Comments ": "Complete",
+      "Plan of Action": "Closed",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar16_1p0_new/builds/smavpar16.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar16.ndm"
+    },
+    {
+      "S.No": 17,
+      "Partition": "smavpar17",
+      "Leads": "Noah",
+      "Intra viols (SPV)": {
+        "wns": -0.03,
+        "tns": -0.01,
+        "nvp": 8
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.02,
+        "nvp": 9
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.03,
+        "tns": 0.03,
+        "nvp": 10
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.02,
+        "nvp": 8
+      },
+      "Util %\n(TRO)": 67.1,
+      "Congestion\n(preCTS)": 1.0,
+      "Shorts\n(TRO)": 22,
+      "ETA": "WW28p1",
+      "Comments ": "In progress",
+      "Plan of Action": "Review",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar17_1p0_new/builds/smavpar17.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar17.ndm"
+    },
+    {
+      "S.No": 18,
+      "Partition": "smavpar18",
+      "Leads": "Olivia",
+      "Intra viols (SPV)": {
+        "wns": -0.04,
+        "tns": -0.02,
+        "nvp": 12
+      },
+      "Intra viols (PBA)": {
+        "wns": -0.03,
+        "tns": -0.03,
+        "nvp": 5
+      },
+      "Inter viols (SPV)": {
+        "wns": -0.02,
+        "tns": -0.01,
+        "nvp": 4
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.01,
+        "nvp": 3
+      },
+      "Util %\n(TRO)": 68.8,
+      "Congestion\n(preCTS)": 1.2,
+      "Shorts\n(TRO)": 30,
+      "ETA": "WW28p3",
+      "Comments ": "Complete",
+      "Plan of Action": "Closed",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar18_1p0_new/builds/smavpar18.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar18.ndm"
+    },
+    {
+      "S.No": 19,
+      "Partition": "smavpar19",
+      "Leads": "Lucas",
+      "Intra viols (SPV)": {
+        "wns": -0.03,
+        "tns": -0.01,
+        "nvp": 8
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.02,
+        "nvp": 9
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.03,
+        "tns": 0.03,
+        "nvp": 10
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.02,
+        "nvp": 8
+      },
+      "Util %\n(TRO)": 67.1,
+      "Congestion\n(preCTS)": 1.0,
+      "Shorts\n(TRO)": 22,
+      "ETA": "WW28p5",
+      "Comments ": "In progress",
+      "Plan of Action": "Review",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar19_1p0_new/builds/smavpar19.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar19.ndm"
+    },
+    {
+      "S.No": 20,
+      "Partition": "smavpar20",
+      "Leads": "Luna",
+      "Intra viols (SPV)": {
+        "wns": -0.03,
+        "tns": -0.01,
+        "nvp": 8
+      },
+      "Intra viols (PBA)": {
+        "wns": 0.01,
+        "tns": 0.02,
+        "nvp": 9
+      },
+      "Inter viols (SPV)": {
+        "wns": 0.03,
+        "tns": 0.03,
+        "nvp": 10
+      },
+      "Inter viols (PBA)": {
+        "wns": 0.02,
+        "tns": 0.02,
+        "nvp": 8
+      },
+      "Util %\n(TRO)": 67.1,
+      "Congestion\n(preCTS)": 1.0,
+      "Shorts\n(TRO)": 22,
+      "ETA": "WW28p7",
+      "Comments ": "In progress",
+      "Plan of Action": "Review",
+      "DB \nPointer": "/nfs/zsc3/disks/lnl_sip_a0_media_par_10/smavpar20_1p0_new/builds/smavpar20.branch_tro_133_rg/10_pre_cts/510_trial_route_opt/work/smavpar20.ndm"
+    }
+  
+]
